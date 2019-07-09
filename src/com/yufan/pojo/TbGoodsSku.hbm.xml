@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbGoodsSku" table="tb_goods_sku" schema="rs_database">
+        <id name="skuId" column="sku_id">
+            <generator class="native"/>
+        </id>
+        <property name="goodsId" column="goods_id"/>
+        <property name="skuName" column="sku_name"/>
+        <property name="trueMoney" column="true_money"/>
+        <property name="nowMoney" column="now_money"/>
+        <property name="skuCode" column="sku_code"/>
+        <property name="propCode" column="prop_code"/>
+        <property name="skuNum" column="sku_num"/>
+        <property name="createtime" column="createtime"/>
+        <property name="skuImg" column="sku_img"/>
+        <property name="purchasePrice" column="purchase_price"/>
+    </class>
+</hibernate-mapping>

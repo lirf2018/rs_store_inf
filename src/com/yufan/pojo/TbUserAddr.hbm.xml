@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbUserAddr" table="tb_user_addr" schema="rs_database">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="areaIds" column="area_ids"/>
+        <property name="areaName" column="area_name"/>
+        <property name="userId" column="user_id"/>
+        <property name="userPhone" column="user_phone"/>
+        <property name="userName" column="user_name"/>
+        <property name="addrDetail" column="addr_detail"/>
+        <property name="isDefault" column="is_default"/>
+        <property name="status" column="status"/>
+        <property name="createtime" column="createtime"/>
+        <property name="addrName" column="addr_name"/>
+        <property name="addrType" column="addr_type"/>
+    </class>
+</hibernate-mapping>

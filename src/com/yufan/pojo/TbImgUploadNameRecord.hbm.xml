@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbImgUploadNameRecord" table="tb_img_upload_name_record" schema="rs_database">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="imgPath" column="img_path"/>
+        <property name="imgStatus" column="img_status"/>
+        <property name="createTime" column="create_time"/>
+        <property name="updateTime" column="update_time"/>
+        <property name="tableName" column="table_name"/>
+        <property name="imgSize" column="img_size"/>
+    </class>
+</hibernate-mapping>

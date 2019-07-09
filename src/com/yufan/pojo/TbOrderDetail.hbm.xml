@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbOrderDetail" table="tb_order_detail" schema="rs_database">
+        <id name="detailId" column="detail_id">
+            <generator class="native"/>
+        </id>
+        <property name="orderId" column="order_id"/>
+        <property name="goodsId" column="goods_id"/>
+        <property name="goodsName" column="goods_name"/>
+        <property name="goodsSpec" column="goods_spec"/>
+        <property name="goodsSpecName" column="goods_spec_name"/>
+        <property name="goodsCount" column="goods_count"/>
+        <property name="saleMoney" column="sale_money"/>
+        <property name="goodsTrueMoney" column="goods_true_money"/>
+        <property name="goodsPurchasePrice" column="goods_purchase_price"/>
+        <property name="timePrice" column="time_price"/>
+        <property name="depositPrice" column="deposit_price"/>
+        <property name="shopId" column="shop_id"/>
+        <property name="shopName" column="shop_name"/>
+        <property name="partnersId" column="partners_id"/>
+        <property name="partnersName" column="partners_name"/>
+        <property name="getAddrId" column="get_addr_id"/>
+        <property name="getAddrName" column="get_addr_name"/>
+        <property name="getTime" column="get_time"/>
+        <property name="backAddrId" column="back_addr_id"/>
+        <property name="backAddrName" column="back_addr_name"/>
+        <property name="backTime" column="back_time"/>
+        <property name="detailStatus" column="detail_status"/>
+        <property name="isTicket" column="is_ticket"/>
+        <property name="ticketJson" column="ticket_json"/>
+        <property name="createtime" column="createtime"/>
+        <property name="lastaltertime" column="lastaltertime"/>
+        <property name="lastalterman" column="lastalterman"/>
+        <property name="status" column="status"/>
+        <property name="remark" column="remark"/>
+        <property name="goodsImg" column="goods_img"/>
+        <property name="cartId" column="cart_id"/>
+        <property name="getGoodsDate" column="get_goods_date"/>
+        <property name="timeGoodsId" column="time_goods_id"/>
+        <property name="goodsSpecNameStr" column="goods_spec_name_str"/>
+    </class>
+</hibernate-mapping>

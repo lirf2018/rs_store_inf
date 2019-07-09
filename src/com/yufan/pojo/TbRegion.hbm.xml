@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbRegion" table="tb_region" schema="rs_database">
+        <id name="regionId" column="region_id">
+            <generator class="native"/>
+        </id>
+        <property name="regionCode" column="region_code"/>
+        <property name="regionName" column="region_name"/>
+        <property name="regionShortname" column="region_shortname"/>
+        <property name="parentId" column="parent_id"/>
+        <property name="regionLevel" column="region_level"/>
+        <property name="regionOrder" column="region_order"/>
+        <property name="regionNameEn" column="region_name_en"/>
+        <property name="regionShortnameEn" column="region_shortname_en"/>
+        <property name="regionType" column="region_type"/>
+        <property name="createman" column="createman"/>
+        <property name="createtime" column="createtime"/>
+        <property name="lastaltertime" column="lastaltertime"/>
+        <property name="lastalterman" column="lastalterman"/>
+        <property name="status" column="status"/>
+        <property name="remark" column="remark"/>
+        <property name="freight" column="freight"/>
+    </class>
+</hibernate-mapping>

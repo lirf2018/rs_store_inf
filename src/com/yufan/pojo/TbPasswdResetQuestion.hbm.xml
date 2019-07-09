@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbPasswdResetQuestion" table="tb_passwd_reset_question" schema="rs_database">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="code" column="code"/>
+        <property name="qustion" column="qustion"/>
+        <property name="answer" column="answer"/>
+        <property name="userId" column="user_id"/>
+        <property name="status" column="status"/>
+        <property name="createDate" column="create_date"/>
+        <property name="updateDate" column="update_date"/>
+    </class>
+</hibernate-mapping>

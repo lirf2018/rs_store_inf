@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbOrderStatusRecode" table="tb_order_status_recode" schema="rs_database">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="orderNo" column="order_no"/>
+        <property name="orderStatus" column="order_status"/>
+        <property name="createtime" column="createtime"/>
+        <property name="lastaltertime" column="lastaltertime"/>
+        <property name="lastalterman" column="lastalterman"/>
+        <property name="remark" column="remark"/>
+    </class>
+</hibernate-mapping>

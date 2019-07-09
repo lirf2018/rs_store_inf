@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yufan.pojo.TbGoods" table="tb_goods" schema="rs_database">
+        <id name="goodsId" column="goods_id">
+            <generator class="native"/>
+        </id>
+        <property name="goodsName" column="goods_name"/>
+        <property name="title" column="title"/>
+        <property name="goodsImg" column="goods_img"/>
+        <property name="trueMoney" column="true_money"/>
+        <property name="nowMoney" column="now_money"/>
+        <property name="intro" column="intro"/>
+        <property name="shopId" column="shop_id"/>
+        <property name="isYuding" column="is_yuding"/>
+        <property name="getWay" column="get_way"/>
+        <property name="isInvoice" column="is_invoice"/>
+        <property name="isPutaway" column="is_putaway"/>
+        <property name="weight" column="weight"/>
+        <property name="classifyId" column="classify_id"/>
+        <property name="areaId" column="area_id"/>
+        <property name="property" column="property"/>
+        <property name="startTime" column="start_time"/>
+        <property name="endTime" column="end_time"/>
+        <property name="validDate" column="valid_date"/>
+        <property name="goodsCode" column="goods_code"/>
+        <property name="goodsUnit" column="goods_unit"/>
+        <property name="isSingle" column="is_single"/>
+        <property name="goodsNum" column="goods_num"/>
+        <property name="isReturn" column="is_return"/>
+        <property name="ticketId" column="ticket_id"/>
+        <property name="createman" column="createman"/>
+        <property name="createtime" column="createtime"/>
+        <property name="lastaltertime" column="lastaltertime"/>
+        <property name="lastalterman" column="lastalterman"/>
+        <property name="status" column="status"/>
+        <property name="remark" column="remark"/>
+        <property name="goodsType" column="goods_type"/>
+        <property name="isPayOnline" column="is_pay_online"/>
+        <property name="partnersId" column="partners_id"/>
+        <property name="depositMoney" column="deposit_money"/>
+        <property name="peisongZcDesc" column="peisong_zc_desc"/>
+        <property name="peisongPeiDesc" column="peisong_pei_desc"/>
+        <property name="purchasePrice" column="purchase_price"/>
+        <property name="isTimeGoods" column="is_time_goods"/>
+        <property name="limitNum" column="limit_num"/>
+        <property name="limitWay" column="limit_way"/>
+        <property name="limitBeginTime" column="limit_begin_time"/>
+        <property name="leve1Id" column="leve1_id"/>
+        <property name="advancePrice" column="advance_price"/>
+        <property name="barCode" column="bar_code"/>
+        <property name="barCodeShop" column="bar_code_shop"/>
+    </class>
+</hibernate-mapping>
